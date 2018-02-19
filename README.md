@@ -16,7 +16,6 @@ This is a script that lets you add a "Pay With Mpesa" button to your site.
      js.src = "https://cdn.rawgit.com/muaad/mpesa_button/master/src/button.js";
      mpesa.parentNode.insertBefore(js, mpesa);
    }(document, 'script', 'mpesa_btn_js'));
-
 </script>
 
 ```

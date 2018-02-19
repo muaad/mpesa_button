@@ -34,6 +34,7 @@
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
   animation-duration: 1s
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif
 }
 
 @-webkit-keyframes animatebottom {
@@ -55,6 +56,7 @@
   margin: 20px 0; 
   box-shadow: 0 2px 4px 0 rgba(0,0,0,0.16),0 2px 10px 0 rgba(0,0,0,0.12)!important; 
   border-radius: 9px;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif
 }
 
 .mpesaInput {
@@ -80,10 +82,12 @@
   font-size: 0.92857143em;
   font-weight: bold;
   text-transform: none;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif
 }
 
 #mpesaBtn {
   text-decoration: none;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif
 }
 
 #mpesaBtn :hover {
@@ -99,10 +103,12 @@
   border-radius: 10px;
   font-size: 20px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif
 }
 
 .mpesaHeader {
   color: #6aae2d; 
   padding-bottom: 7px; 
   border-bottom: 1px solid rgba(34,36,38,.1);
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif
 }
