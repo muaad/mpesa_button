@@ -9,7 +9,7 @@ if (button !== null) {
     formMarkup = '<div id="mpesaForm"><h3 class="mpesaHeader">Pay With Mpesa</h3>' + form + '</div>'
     button.innerHTML = btnMarkup
 
-    success = '<div id="successDiv" class="animate-bottom">\
+    success = '<div style="text-align: center;" class="animate-bottom">\
       <h2>√ Success</h2>\
       <p>An Mpesa payment request will be sent to your phone shortly</p>\
     </div>'

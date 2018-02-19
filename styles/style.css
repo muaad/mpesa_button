@@ -46,10 +46,6 @@
   to{ bottom:0; opacity:1 }
 }
 
-#successDiv {
-  text-align: center;
-}
-
 /* Form Styles */
 
 #mpesaForm {
@@ -84,6 +80,14 @@
   font-size: 0.92857143em;
   font-weight: bold;
   text-transform: none;
+}
+
+#mpesaBtn {
+  text-decoration: none;
+}
+
+#mpesaBtn :hover {
+  color: white;
 }
 
 .mpesaButton {
