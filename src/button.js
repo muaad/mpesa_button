@@ -36,6 +36,7 @@ if (button !== null) {
             formDiv = document.getElementById('mpesaForm')
             setTimeout(function () {
                 formDiv.innerHTML = success
+                document.getElementById('successDiv').style.display = "";
             }, 3000);
             loader.style.display = "";
         })
