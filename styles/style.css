@@ -33,8 +33,8 @@
   -webkit-animation-name: animatebottom;
   -webkit-animation-duration: 1s;
   animation-name: animatebottom;
-  animation-duration: 1s
-  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif
+  animation-duration: 1s;
+  font-family: "Lato", "Helvetica Neue", Arial, Helvetica, sans-serif;
 }
 
 @-webkit-keyframes animatebottom {
