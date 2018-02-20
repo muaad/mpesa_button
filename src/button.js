@@ -26,7 +26,7 @@ if (button !== null) {
         loaderDiv.setAttribute("id", "loader");
         payButton.parentNode.insertBefore(loaderDiv, payButton.nextSibling);
         loader = document.getElementById("loader")
-        loader.style.display = "none";
+        // loader.style.display = "none";
         loader.style.margin = '-75px 0 0 -110px';
 
         payButton.addEventListener('click', function (evt) {
