@@ -52,6 +52,9 @@ if (button !== null) {
                     if (this.readyState == 4 && this.status == 200) {
                         formDiv.innerHTML = success
                     }
+                    else {
+                        formDiv.innerHTML = 'Something went wrong. Contact website developer. Error: "We could not POST to the URL specified!"'
+                    }
                 };
             } else {
                 setTimeout(function () {
