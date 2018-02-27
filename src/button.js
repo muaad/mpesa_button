@@ -25,6 +25,7 @@ if (button !== null) {
         phoneInput = document.getElementById("mpesaPhoneNumber")
         phone = button.getAttribute('data-phone')
         amount = button.getAttribute('data-amount')
+        url = button.getAttribute('data-url')
         amountInput.value = amount
         phoneInput.value = phone
         button.style.display = 'none';
@@ -42,9 +43,20 @@ if (button !== null) {
             payButton.disabled = true;
             document.getElementById('mpesaPhoneNumber').disabled = true;
             formDiv = document.getElementById('mpesaForm')
-            setTimeout(function () {
-                formDiv.innerHTML = success
-            }, 3000);
+            if (url !== undefined) {
+                xhttp.open("POST", url, true);
+                xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                xhttp.send('phone=' + phoneInput.value + '&amount=' + amountInput.value);
+                xhttp.onreadystatechange = function () {
+                    if (this.readyState == 4 && this.status == 200) {
+                        formDiv.innerHTML = success
+                    }
+                };
+            } else {
+                setTimeout(function () {
+                    formDiv.innerHTML = 'Something went wrong. Contact website developer. Error: "No URL specified!"'
+                }, 3000); 
+            }
             loader.style.display = "";
         })
     })
