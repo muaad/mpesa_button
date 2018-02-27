@@ -44,6 +44,7 @@ if (button !== null) {
             document.getElementById('mpesaPhoneNumber').disabled = true;
             formDiv = document.getElementById('mpesaForm')
             if (url !== undefined) {
+                var xhttp = new XMLHttpRequest();
                 xhttp.open("POST", url, true);
                 xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                 xhttp.send('phone=' + phoneInput.value + '&amount=' + amountInput.value);
