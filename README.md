@@ -25,5 +25,12 @@ This is a script that lets you add a "Pay With Mpesa" button to your site.
 ```
 <div id='mpesaButton'></div>
 ```
+You can specify a number of options for the button like prepopulating the `amount` and `phone` fields by providing data attributes for the button. For example:
+
+```
+<div id='mpesaButton' data-phone='254722XXXXXX' data-amount=3000 data-url='https://domain.com/mpesa/payments/request'></div>
+```
+
+The `URL` data attribute is the URL used to post the form values to. This is where you will send the payment request using the Mpesa API.
 
 ### And, that is it!
