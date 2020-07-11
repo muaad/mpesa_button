@@ -1,8 +1,8 @@
 var button = document.getElementById("mpesaButton");
 
 if (button !== null) {
-    document.head.insertAdjacentHTML('beforeend', '<link rel=stylesheet href="https://rawgit.com/muaad/mpesa_button/master/styles/style.css">');
-    img = '<img style="width: 35px; display: inline; margin: -8px;" src= "https://rawgit.com/muaad/mpesa_button/master/images/mpesa.png">'
+    document.head.insertAdjacentHTML('beforeend', '<link rel=stylesheet href="https://cdn.jsdelivr.net/gh/muaad/mpesa_button@master/styles/style.css">');
+    img = '<img style="width: 35px; display: inline; margin: -8px;" src= "https://cdn.jsdelivr.net/gh/muaad/mpesa_button@master/images/mpesa.png">'
     btnMarkup = '<a href="" id="mpesaBtn" class="mpesaButton">' + img + '<span style="margin-left: 15px;">Pay with Mpesa</span></a>'
     phoneInstruction = '<strong><em>We will send an Mpesa payment request to this phone number</em></stron>'
     form = '<form>\
